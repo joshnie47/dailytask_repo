@@ -1,0 +1,45 @@
+Survey form
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name<input id="name" type="text" placeholder="Ex.Sammy" required></label>
+      <label id="email-label">Email<input id="email" type="email" placeholder="Ex.sammy@gmail.com" required></label>
+      <label id="number-label">Number<input id="number" type="number" min="10" max="70" placeholder="Ex.22"></label>
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select name="" id="dropdown">
+        <option value="0">Select your current role</option>
+        <option value="1">student</option>
+        <option value="2">professional worker</option>
+        <option value="3">other</option>
+      </select>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label><input type="radio" name="recommand" value="Definitely">Definitely</label>
+      <label><input type="radio" name="recommand" value="Maybe">Maybe</label>
+      <label><input type="radio" name="recommand" value="Not sure">Not sure</label>
+      <label for="dropdowp1">What is your favorite feature of freeCodeCamp?</label>
+      <select name="" id="dropdown1">
+        <option value="0">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">projects</option>
+        <option value="3">Open source</option>
+      </select>
+      <label for="preference">What would you like to see improved?</label>
+      <ul id="prefernce">
+        <il><label><input type="checkbox" name="prefer" value="0">Front-end Projects</label></il>
+        <il><label><input type="checkbox" name="prefer" value="1">Back-end Projects</label></il>
+        <il><label><input type="checkbox" name="prefer" value="2">Data Visualization</label></il>
+        <il><label><input type="checkbox" name="prefer" value="3">Challenges</label></il>
+        <il><label><input type="checkbox" name="prefer" value="4">Open Source Community</label></il>
+        <il><label><input type="checkbox" name="prefer" value="5">Videos</label></il>
+        <il><label><input type="checkbox" name="prefer" value="6">Additional Courses</label></il>
+      </ul>
+      <label>Any comments or suggestions?</label>
+      <textarea>please enter your comment here...</textarea>
+      <input id="submit" type="submit" value="submit">
